@@ -12,8 +12,9 @@ export const Home = () => {
             <nav className="navbar navbar-info bg-info">
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/home">Horarios do Cimol</Link>
-                    <span>{userLogado.displayName}
-                        <button type="button" className="btn btn-info" onClick={()=>{singOut()}}>Sair</button>
+                    <span >
+                        <p id="userName">{userLogado.displayName}</p>
+                        <button type="button" className="btn btn-outline-light sair" onClick={()=>{singOut()}}>Sair</button>
                     </span>
 
                 </div>
